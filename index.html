@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silver & Copper Purity Conversion Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Silver Purity Conversion Calculator</h2>
+            <label for="initialWeight">Initial Weight of Silver (kg):</label>
+            <input type="number" id="initialWeight" name="initialWeight" step="0.001" required><br>
+            
+            <label for="initialPurity">Initial Purity (%):</label>
+            <input type="number" id="initialPurity" name="initialPurity" step="0.001" required><br>
+            
+            <label for="desiredPurity">Desired Purity (%):</label>
+            <input type="number" id="desiredPurity" name="desiredPurity" step="0.001" required><br>
+            
+            <label for="additionalPurity">Purity of Additional Silver (%):</label>
+            <input type="number" id="additionalPurity" name="additionalPurity" step="0.001" required><br>
+            
+            <button type="button" id="calculateSilverButton">Calculate</button>
+
+            <div id="silverResult"></div>
+        </div>
+        
+        <div class="card">
+            <h2>Copper Purity Conversion Calculator</h2>
+            <label for="initialSilverWeight">Initial Weight of Silver (kg):</label>
+            <input type="number" id="initialSilverWeight" name="initialSilverWeight" step="0.001" required><br>
+            
+            <label for="initialSilverPurity">Initial Purity of Silver (%):</label>
+            <input type="number" id="initialSilverPurity" name="initialSilverPurity" step="0.001" required><br>
+            
+            <label for="desiredCopperPurity">Desired Purity of Copper (%):</label>
+            <input type="number" id="desiredCopperPurity" name="desiredCopperPurity" step="0.001" required><br>
+            
+            <button type="button" id="calculateCopperButton">Calculate</button>
+
+            <div id="copperResult"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
