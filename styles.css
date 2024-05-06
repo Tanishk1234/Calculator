@@ -1,9 +1,8 @@
 .container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
+    max-width: 600px; /* Set maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding */
 }
-
 .card {
     width: 45%;
     padding: 20px;
@@ -49,4 +48,70 @@ button:hover {
 #copperResult {
     margin-top: 10px;
     font-weight: bold;
+}
+/* Add this to your styles.css file */
+
+.input-row {
+    margin-bottom: 10px; /* Add margin between rows */
+}
+
+.input-row label {
+    display: inline-block;
+    width: 150px; /* Set width for labels */
+}
+
+.input-row input {
+    width: 150px; /* Set width for inputs */
+    margin-right: 10px; /* Add margin between inputs */
+}
+
+#addInputButton, #removeInputButton, #calculatePureSilverButton {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-right: 10px; /* Add margin between buttons */
+}
+
+#addInputButton:hover, #removeInputButton:hover, #calculatePureSilverButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#removeInputButton {
+    display: none; /* Initially hide the remove button */
+}
+
+.card {
+    background-color: #f9f9f9; /* Light gray background color for cards */
+    padding: 20px; /* Add padding */
+    border-radius: 5px; /* Add border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    margin-bottom: 20px; /* Add margin between cards */
+}
+
+#pureSilverResult {
+    margin-top: 10px; /* Add margin above the result */
+    font-weight: bold; /* Make the result bold */
+}
+
+input[type='number'] {
+    padding: 5px; /* Add padding to number inputs */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 3px; /* Add border radius */
+}
+
+input[type='number']:focus {
+    outline: none; /* Remove outline on focus */
+    border-color: #007bff; /* Change border color on focus */
+}
+
+button {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border: none; /* Remove border */
+    border-radius: 3px; /* Add border radius */
+}
+
+button:focus {
+    outline: none; /* Remove outline on focus */
 }
